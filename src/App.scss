@@ -1,0 +1,149 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  background-color: darkgrey;
+}
+label {
+  cursor: pointer;
+}
+ul {
+  padding-left: 0;
+}
+.main_title {
+  color: lavenderblush;
+  text-align: center;
+  padding: 16px;
+}
+.todo {
+  background-color: snow;
+  display: flex;
+  border: 0;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+  &:hover {
+    transition: .3s;
+    box-shadow: 0 0 7px 1px #00000050;
+  }
+}
+.acceptAdd {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.cancelAdd {
+  border-radius: 0;
+}
+.todo_list {
+  margin: 0 auto;
+  list-style: none;
+  width: 1000px;
+  max-width: 100%;
+}
+.index {
+  padding-left: 10px;
+}
+.title {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+.title p {
+  margin: 0;
+}
+.todo_list li{
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 1px solid lavenderblush;
+  border-radius: 5px;
+}
+.change_div {
+  display: flex;
+}
+.change_div input {
+  margin-right: 20px;
+}
+.cancel_edit {
+  margin-left: 15px;
+}
+.done {
+  background-color: greenyellow;
+  transition: .5s all;
+}
+.deleteButtonDiv {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 523px) {
+    padding-bottom: 30px;
+  }
+}
+.todoInput, .todoTitle {
+  align-self: center;
+  flex-grow: 1;
+}
+.todoTitle {
+  word-break: break-word;
+}
+.todo_checkbox {
+  width: 16px;
+  height: 16px;
+  margin-left: 0;
+  position: static;
+  flex-shrink: 0;
+}
+.sort_checkbox {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    width: 16px;
+    height: 16px;
+  }
+}
+.input_group {
+  @media (min-width: 1024px) {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+}
+.noEdit {
+  display: flex;
+  align-items: center;
+  div {
+    flex-shrink: 0;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding-top: 16px;
+      .editTodo {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+.todoInfoPage {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 523px) {
+    .cardTitle {
+      font-size: 1rem;
+    }
+    .cardText {
+      font-size: 0.750rem;
+    }
+  }
+}
+.myCard {
+  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
+}
+.goBack {
+  margin-top: 16px;
+}
